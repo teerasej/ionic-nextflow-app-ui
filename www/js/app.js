@@ -34,9 +34,29 @@ angular.module('starter', ['ionic'])
     // state 'thor'
     // url '/thor'
     // templateUrl: 'views/thor.html'
-    
+    $stateProvider
+    .state('thor', {
+      url: '/thor',
+      templateUrl: 'views/thor.html'
+    })
     // asgard
-    
+    $stateProvider
+    .state('asgard', {
+      url: '/asgard',
+      templateUrl: 'views/asgard.html'
+    })
+
+    $stateProvider
+    .state('ironman', {
+      url: '/ironman',
+      templateUrl: 'views/ironman.html'
+    })
+
+    $stateProvider
+    .state('hulk', {
+      url: '/hulk',
+      templateUrl: 'views/hulk.html'
+    })
 
     $urlRouterProvider.otherwise('/home');
 })
