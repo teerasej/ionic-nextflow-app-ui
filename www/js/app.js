@@ -26,10 +26,10 @@ angular.module('starter', ['ionic'])
 .controller('ProfileController', ['$scope', function($scope) {
 
     $scope.profiles = [
-      {name:'John', role: 'Geek', photoSrc:'img/1.jpg'},
-      {name:'Greg', role: 'Normal Human', photoSrc:'img/2.jpg'},
-      {name:'Max', role: "Greg's friend", photoSrc:'img/3.jpg'},
-      {name:'Pete', role: 'Saleman', photoSrc:'img/4.jpg'},
+      {tel:'089-493-2394', name:'John', role: 'Geek', photoSrc:'img/1.jpg'},
+      {tel:'082-128-5482', name:'Greg', role: 'Normal Human', photoSrc:'img/2.jpg'},
+      {tel:'085-128-3990', name:'Max', role: "Greg's friend", photoSrc:'img/3.jpg'},
+      {tel:'085-239-1287', name:'Pete', role: 'Saleman', photoSrc:'img/4.jpg'},
     ];
 
 }])
