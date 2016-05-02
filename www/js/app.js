@@ -23,13 +23,14 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('ProfileController', ['$scope', function($scope) {
+.config(function($stateProvider, $urlRouterProvider){
 
-    $scope.profiles = [
-      {name:'John', role: 'Geek', photoSrc:'img/1.jpg'},
-      {name:'Greg', role: 'Normal Human', photoSrc:'img/2.jpg'},
-      {name:'Max', role: "Greg's friend", photoSrc:'img/3.jpg'},
-      {name:'Pete', role: 'Saleman', photoSrc:'img/4.jpg'},
-    ];
 
-}])
+    // $stateProvider
+    // .state('...', {
+    //   url: '...',
+    //   templateUrl: '...'
+    // })
+
+    // $urlRouterProvider.otherwise('/home');
+})
