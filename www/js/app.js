@@ -25,12 +25,18 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider){
 
+    $stateProvider
+    .state('home', {
+      url: '/home',
+      templateUrl: 'views/home.html'
+    })
 
-    // $stateProvider
-    // .state('...', {
-    //   url: '...',
-    //   templateUrl: '...'
-    // })
+    // state 'thor'
+    // url '/thor'
+    // templateUrl: 'views/thor.html'
+    
+    // asgard
+    
 
-    // $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/home');
 })
