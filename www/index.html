@@ -28,7 +28,7 @@
             <ion-list>
                 <!-- item thumbnail -->
                 <!-- ng-repeat="profile in profiles" -->
-                <a class="item item-thumbnail-left" href="#">
+                <a class="item item-thumbnail-left" ng-repeat="profile in profiles" href="#">
                   <img src="{{profile.photoSrc}}">
                   <h2>{{profile.name}}</h2>
                   <p>{{profile.role}}</p>
