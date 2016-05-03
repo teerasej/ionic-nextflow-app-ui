@@ -48,22 +48,22 @@ angular.module('starter', ['ionic'])
     $scope.heroes = [{
       title: 'Iron Man',
       tag: 'ironman',
-      imageName: 'ironman'
+      imageName: 'ironman.jpg'
     },{
       title: 'Hulk',
       tag: 'hulk',
-      imageName: 'hulk'
+      imageName: 'hulk.jpg'
     },{
       title: 'Thor',
       tag: 'thor',
-      imageName: 'thor'
+      imageName: 'thor.jpg'
     }];
 
 }])
 
 .controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
 
-  
+
     $scope.title = $stateParams.title;
     $scope.imagePath = $stateParams.imagePath;
 
