@@ -28,7 +28,8 @@ angular.module('starter', ['ionic'])
     $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'views/home.html'
+      templateUrl: 'views/home.html',
+      controller: 'HomeController'
     })
 
     $stateProvider
@@ -41,9 +42,24 @@ angular.module('starter', ['ionic'])
     $urlRouterProvider.otherwise('/home');
 })
 
-.controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
+.controller('HomeController',['$scope',function($scope, $stateParams){
 
     // Assign $stateParams.name to name property
-    $scope.name = $stateParams.name;
+    $scope.heroes = [{
+      name: 'Iron Man',
+      imagePath: 'img/ironman.jpg'
+    },{
+      name: 'Hulk',
+      imagePath: 'img/hulk.jpg'
+    },{
+      name: 'Thor',
+      imagePath: 'img/thor.jpg'
+    }];
+
+}])
+
+.controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
+
+    
 
 }])
