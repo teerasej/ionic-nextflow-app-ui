@@ -40,4 +40,9 @@ angular.module('starter', ['ionic'])
     $urlRouterProvider.otherwise('/home');
 })
 
-// Create controller with $scope & $stateParams
+.controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
+
+    // Assign $stateParams.name to name property
+    
+
+}])
