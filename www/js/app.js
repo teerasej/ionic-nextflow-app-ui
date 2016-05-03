@@ -31,32 +31,13 @@ angular.module('starter', ['ionic'])
       templateUrl: 'views/home.html'
     })
 
-    // Update to /hero/{{hero's name}}
     $stateProvider
-    .state('thor', {
-      url: '/thor',
-      templateUrl: 'views/thor.html'
+    .state('hero-detail', {
+      url: '/hero/{{name}}',
+      templateUrl: 'views/hero-detail.html'
     })
-
-    // Start remove over state configuration
-    $stateProvider
-    .state('asgard', {
-      url: '/asgard',
-      templateUrl: 'views/asgard.html'
-    })
-
-    $stateProvider
-    .state('ironman', {
-      url: '/ironman',
-      templateUrl: 'views/ironman.html'
-    })
-
-    $stateProvider
-    .state('hulk', {
-      url: '/hulk',
-      templateUrl: 'views/hulk.html'
-    })
-    // End remove state configuration
 
     $urlRouterProvider.otherwise('/home');
 })
+
+// Create controller with $scope & $stateParams
