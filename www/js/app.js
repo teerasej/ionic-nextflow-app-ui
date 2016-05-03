@@ -31,15 +31,14 @@ angular.module('starter', ['ionic'])
       templateUrl: 'views/home.html'
     })
 
-    // state 'thor'
-    // url '/thor'
-    // templateUrl: 'views/thor.html'
+    // Update to /hero/{{hero's name}}
     $stateProvider
     .state('thor', {
       url: '/thor',
       templateUrl: 'views/thor.html'
     })
-    // asgard
+
+    // Start remove over state configuration
     $stateProvider
     .state('asgard', {
       url: '/asgard',
@@ -57,6 +56,7 @@ angular.module('starter', ['ionic'])
       url: '/hulk',
       templateUrl: 'views/hulk.html'
     })
+    // End remove state configuration
 
     $urlRouterProvider.otherwise('/home');
 })
