@@ -34,7 +34,8 @@ angular.module('starter', ['ionic'])
     $stateProvider
     .state('hero-detail', {
       url: '/hero/{{name}}',
-      templateUrl: 'views/hero-detail.html'
+      templateUrl: 'views/hero-detail.html',
+      controller: 'HeroDetailController'
     })
 
     $urlRouterProvider.otherwise('/home');
@@ -43,6 +44,6 @@ angular.module('starter', ['ionic'])
 .controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
 
     // Assign $stateParams.name to name property
-    
+
 
 }])
