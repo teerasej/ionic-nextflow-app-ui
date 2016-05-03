@@ -1,5 +1,10 @@
 <ion-view title="Nextflow Super Heroes" hide-back-button="true">
 	<ion-content>
 		<!-- List of heroes -->
+		<ion-list>
+		  <ion-item ng-repeat="hero in heroes" href="#/hero/{{hero.title}}/{{hero.imageName}}">
+					{{hero.title}}
+		  </ion-item>
+		</ion-list>
 	</ion-content>
 </ion-view>

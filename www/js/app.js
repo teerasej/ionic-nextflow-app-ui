@@ -34,7 +34,7 @@ angular.module('starter', ['ionic'])
 
     $stateProvider
     .state('hero-detail', {
-      url: '/hero/:name',
+      url: '/hero/:title/:imagePath',
       templateUrl: 'views/hero-detail.html',
       controller: 'HeroDetailController'
     })
@@ -46,20 +46,25 @@ angular.module('starter', ['ionic'])
 
     // Assign $stateParams.name to name property
     $scope.heroes = [{
-      name: 'Iron Man',
-      imagePath: 'img/ironman.jpg'
+      title: 'Iron Man',
+      tag: 'ironman',
+      imageName: 'ironman'
     },{
-      name: 'Hulk',
-      imagePath: 'img/hulk.jpg'
+      title: 'Hulk',
+      tag: 'hulk',
+      imageName: 'hulk'
     },{
-      name: 'Thor',
-      imagePath: 'img/thor.jpg'
+      title: 'Thor',
+      tag: 'thor',
+      imageName: 'thor'
     }];
 
 }])
 
 .controller('HeroDetailController',['$scope','$stateParams',function($scope, $stateParams){
 
-    
+  
+    $scope.title = $stateParams.title;
+    $scope.imagePath = $stateParams.imagePath;
 
 }])
