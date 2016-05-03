@@ -35,6 +35,8 @@ angular.module('starter', ['ionic'])
     .state('hero-detail', {
       url: '/hero/{{name}}',
       templateUrl: 'views/hero-detail.html'
+      // Set controller
+      
     })
 
     $urlRouterProvider.otherwise('/home');
